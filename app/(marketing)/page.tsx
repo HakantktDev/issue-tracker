@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { Timestamp } from '../components/Timestamp'
-import Button from '../components/ui/Button'
+import Link from "next/link";
+import {Timestamp} from "../components/Timestamp";
+import Button from "../components/ui/Button";
 
 export default async function LandingPage() {
   return (
@@ -31,11 +31,11 @@ export default async function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
           <div className="text-center text-sm text-gray-500 dark:text-gray-400">
             <p>
-              © <Timestamp /> Mode. Built for Next.js Fundamentals.
+              © <Timestamp /> Built for Issue Tracker
             </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }

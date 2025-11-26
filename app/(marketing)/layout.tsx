@@ -1,11 +1,11 @@
-import Link from 'next/link'
-import { Timestamp } from '../components/Timestamp'
-import Button from '../components/ui/Button'
+import Link from "next/link";
+import {Timestamp} from "../components/Timestamp";
+import Button from "../components/ui/Button";
 
 export default async function MarketingLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <div className="flex min-h-screen flex-col">
@@ -13,7 +13,7 @@ export default async function MarketingLayout({
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <div className="flex items-center gap-8">
             <Link href="/" className="text-xl font-bold">
-              Mode
+              Issue Tracker
             </Link>
             <nav className="hidden md:flex gap-6">
               <Link
@@ -128,11 +128,11 @@ export default async function MarketingLayout({
           </div>
           <div className="mt-8 border-t pt-8 text-center">
             <p className="text-sm text-gray-600">
-              &copy; <Timestamp /> Mode. All rights reserved.
+              &copy; <Timestamp /> Issue Tracker. All rights reserved.
             </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
