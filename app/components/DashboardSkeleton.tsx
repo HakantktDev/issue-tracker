@@ -17,7 +17,7 @@ export default function DashboardSkeleton() {
         </div>
         {/* Issue row skeletons */}
         <div className="divide-y divide-gray-200 dark:divide-dark-border-default">
-          {Array.from({ length: 5 }).map((_, index) => (
+          {Array.from({length: 5}).map((_, index) => (
             <div
               key={index}
               className="grid grid-cols-12 gap-4 px-6 py-4 items-center"
@@ -31,5 +31,5 @@ export default function DashboardSkeleton() {
         </div>
       </div>
     </div>
-  )
+  );
 }

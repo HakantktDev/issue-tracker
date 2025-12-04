@@ -7,6 +7,7 @@ import {mockDelay} from "./utils";
 import {error} from "console";
 
 export const getCurrentUser = async () => {
+  await mockDelay(1000);
   const session = await getSession();
   if (!session) return null;
 

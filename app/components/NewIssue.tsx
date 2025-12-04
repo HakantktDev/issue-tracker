@@ -1,5 +1,5 @@
 const NewIssue = async () => {
-  return null
-}
+  return null;
+};
 
-export default NewIssue
+export default NewIssue;
